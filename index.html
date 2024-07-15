@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-[40px] font-bold text-center mt-12 text-[#ff0534]">Filtrado de cervezas</h1>
+    </header>
+    <main>
+        <div class="w-screen flex flex-row justify-center ">
+            <div class="w-[440px] h-[297px] flex flex-col justify-center items-center border border-black bg-[#a2b38b] rounded-[15px]">
+                <div class="w-[390px] h-[190px]  flex flex-col justify-center rounded-[10px] bg-[#a9aae8]">
+                    <div class="mb-4">
+                      <label class="text-[20px] font-bold mb-[10px]" for="">Ingrese parte del nombre de una cerveza</label><br>
+                      <input id="inputParteDelNombreCerveza" class="bg-[#ede6db] italic pl-2 p-[10px] rounded-[30px]" type="text" placeholder="Ingrese texto">
+                    </div>
+                    <div>
+                        <label class="text-[20px] font-bold mb-[10px]" for="">Filtrar por numero de IBU mayores a: </label><br>
+                        <input id="inputNumeroIbu" class="w-[195px] bg-[#ede6db] italic pl-2 p-[10px] rounded-[30px]" type="number" placeholder="Ingrese numero de IBU">
+                      </div>
+                    
+                </div>
+                <button id="botonBuscar" class="text-[24px] bg-[#8fbdd3] rounded-[30px] p-3 mt-5 border border-black">BUSCAR</button>
+            </div>
+            </div>
+        </div>
+        <div id="contenedorDeTabla" class="w-full flex flex-row justify-center mt-12 ">
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script type="module" src="./filtradoBeers.js"></script>
+</body>
+</html>
